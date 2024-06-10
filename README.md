@@ -13,6 +13,7 @@ Students CRUD with database
 
 ### Архитектура Spring
 <img src=https://github.com/Pogold/SpringCRUDPostgres/assets/93859142/614b24ab-daa1-4e5f-a7bb-89cac61835fd width="600" height="600">
+
 1.2.1 Базовый контейнер
 Базовый контейнер состоит из модулей Core, Beans, Context и Expression Language.
 
@@ -80,7 +81,9 @@ Castor, XMLBeans, JiBX и XStream.
 Модуль Instrumentation обеспечивает поддержку class instrumentation и реализаций classloader для использования на определенных серверах приложений.
 
 1.2.5 Тестирование
-Модуль Test поддерживает тестирование компонентов Spring с помощью JUnit или TestNG. Он обеспечивает согласованную загрузку Spring ApplicationContexts и кэширование этих контекстов. Он также предоставляет макетные объекты, которые вы можете использовать для изолированного тестирования вашего кода.
+Модуль Test поддерживает тестирование компонентов Spring с помощью JUnit или TestNG. 
+Он обеспечивает согласованную загрузку Spring ApplicationContexts и кэширование этих контекстов. 
+Он также предоставляет макетные объекты, которые вы можете использовать для изолированного тестирования вашего кода.
 
 
 ### Проверка запросов в Postmane
@@ -91,6 +94,7 @@ Castor, XMLBeans, JiBX и XStream.
 
 ### Инверсия зависимостей
 <img src=https://github.com/Pogold/SpringCRUDPostgres/assets/93859142/6bb0181e-cc29-4c39-bde8-0dbfcc20df74 width="800" height="400">
+
 Принцип инверсии зависимостей (англ. dependency inversion principle, DIP) — важный принцип объектно-ориентированного программирования, 
 используемый для уменьшения связанности в компьютерных программах. Входит в пятёрку принципов SOLID.
 
