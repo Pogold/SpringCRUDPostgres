@@ -1,8 +1,34 @@
 # SpringCRUDPostgres
-Students CRUD with database
+Students CRUD Java Spring Boot with database Postgresql
 
-Был создан api для работы с информацией о Студентах.
-Использованы JPA,MVC архитектура,DAO.
+Был создан API для работы с информацией о Студентах.
+
+Использованы JPA, MVC архитектура, DAO.
+
+За сборку отвечает Maven.
+
+# Для запуска 
+
+1. Отредактируйте application.yaml
+
+```yaml
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/<your database>
+    username: <username>
+    password: <password>
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    properties:
+      hibernate:
+        format-sql: true
+```
+2. Запустите SpringStudentsApplication.java
 
 # Функционал
 
@@ -86,8 +112,8 @@ Students CRUD with database
 
 
 
-# Проверка запросов в Postmane
-<img src=https://github.com/Pogold/SpringCRUDPostgres/assets/93859142/47c6cc4b-786b-4d20-b770-fd2a5e8c598b width="800" height="400">
+# Проверка запросов в Postman
+<img src=https://github.com/Pogold/SpringCRUDPostgres/assets/93859142/47c6cc4b-786b-4d20-b770-fd2a5e8c598b width="1000" height="400">
 
 ### GET-запросы:
 
@@ -107,11 +133,11 @@ Students CRUD with database
 
 - api/v1/students/delete_student/email
 
-# Обработка HTTP запросов Spring'ом
-<img src=https://github.com/Pogold/SpringCRUDPostgres/assets/93859142/798cbd39-f382-4f47-8d29-8f3c2c525f57 width="1000" height="400">
+# Обработка HTTP запросов Spring
+<img src=https://github.com/Pogold/SpringCRUDPostgres/assets/93859142/798cbd39-f382-4f47-8d29-8f3c2c525f57 width="800" height="400">
 
 # Инверсия зависимостей
-<img src=https://github.com/Pogold/SpringCRUDPostgres/assets/93859142/6bb0181e-cc29-4c39-bde8-0dbfcc20df74 width="1000" height="400">
+<img src=https://github.com/Pogold/SpringCRUDPostgres/assets/93859142/6bb0181e-cc29-4c39-bde8-0dbfcc20df74 width="800" height="400">  
 
 
 Принцип инверсии зависимостей (англ. dependency inversion principle, DIP) — важный принцип объектно-ориентированного программирования, 
