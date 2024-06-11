@@ -86,35 +86,36 @@ Students CRUD with database
 
 
 
-### Проверка запросов в Postmane
+# Проверка запросов в Postmane
 <img src=https://github.com/Pogold/SpringCRUDPostgres/assets/93859142/47c6cc4b-786b-4d20-b770-fd2a5e8c598b width="800" height="400">
 
-GET-запросы:
+### GET-запросы:
 
-/api/v1/students
+- /api/v1/students
 
-/api/v1/students/<email>
+- /api/v1/students/email
 
-POST-запрос:
+### POST-запрос:
 
-api/v1/students/save_student
+- api/v1/students/save_student
 
-PUT-запрос:
+### PUT-запрос:
 
-api/v1/students/update_student
+- api/v1/students/update_student
 
-DELETE-запрос:
+### DELETE-запрос:
 
-api/v1/students/delete_student/<email>
+- api/v1/students/delete_student/email
 
-### Обработка HTTP запросов Spring'ом
-<img src=https://github.com/Pogold/SpringCRUDPostgres/assets/93859142/798cbd39-f382-4f47-8d29-8f3c2c525f57 width="800" height="400">
+# Обработка HTTP запросов Spring'ом
+<img src=https://github.com/Pogold/SpringCRUDPostgres/assets/93859142/798cbd39-f382-4f47-8d29-8f3c2c525f57 width="1000" height="400">
 
-### Инверсия зависимостей
-<img src=https://github.com/Pogold/SpringCRUDPostgres/assets/93859142/6bb0181e-cc29-4c39-bde8-0dbfcc20df74 width="800" height="400">
+# Инверсия зависимостей
+<img src=https://github.com/Pogold/SpringCRUDPostgres/assets/93859142/6bb0181e-cc29-4c39-bde8-0dbfcc20df74 width="1000" height="400">
+
 
 Принцип инверсии зависимостей (англ. dependency inversion principle, DIP) — важный принцип объектно-ориентированного программирования, 
 используемый для уменьшения связанности в компьютерных программах. Входит в пятёрку принципов SOLID.
 
-1. Модули верхних уровней не должны зависеть от модулей нижних уровней. Оба типа модулей должны зависеть от абстракций.
-2. Абстракции не должны зависеть от деталей. Детали должны зависеть от абстракций.
+- Модули верхних уровней не должны зависеть от модулей нижних уровней. Оба типа модулей должны зависеть от абстракций.
+- Абстракции не должны зависеть от деталей. Детали должны зависеть от абстракций.
